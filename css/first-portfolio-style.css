@@ -1,11 +1,10 @@
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #221CC1;
-  --secondary-color: #FD6407;
+  --primary-color: #4335A7;
+  --secondary-color: #80C4E9;
   --section-bg-color: #f9f9f9;
   --dark-color: #000000;
   --p-color: #717275;
@@ -146,8 +145,8 @@ strong {
 -----------------------------------------*/
 .avatar-image {
   border-radius: var(--border-radius-large);
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
 }
 
@@ -263,6 +262,20 @@ strong {
 
 .custom-btn:hover {
   background: var(--primary-color);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  color: var(--white-color);
+}
+
+.custom-btn-yes {
+  background: var(--primary-color);
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+  padding: 12px 24px;
+}
+
+.custom-btn-yes:hover {
+  background: var(--secondary-color);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--white-color);
 }
@@ -785,7 +798,7 @@ strong {
   outline: none;
 }
 
-.form-floating > label {
+.form-floating>label {
   color: var(--p-color);
 }
 
