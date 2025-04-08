@@ -156,6 +156,45 @@ strong {
 }
 
 /*---------------------------------------
+  CARD SKILL               
+-----------------------------------------*/
+.skill .projects-imagee {
+  border-radius: var(--border-radius-medium);
+  display: block;
+  width: 100%;
+}
+
+/* Garis Pemisah */
+.hard-skill-column {
+  position: relative;
+  padding-right: 20px;
+}
+
+.hard-skill-column::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #dee2e6;
+  /* Warna abu-abu Bootstrap */
+}
+
+/* Responsif: Sembunyikan garis di mobile */
+@media (max-width: 991px) {
+  .hard-skill-column::after {
+    display: none;
+  }
+
+  .hard-skill-column {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 30px;
+  }
+}
+
+/*---------------------------------------
   PRE LOADER               
 -----------------------------------------*/
 .preloader {
@@ -578,6 +617,24 @@ strong {
 .about-thumb {
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.clean-text {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--font-weight-normal);
+  margin-bottom: 20px;
+}
+
+.clean-text a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.clean-text a:hover {
+  text-decoration: underline;
 }
 
 /*---------------------------------------
